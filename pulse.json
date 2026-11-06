@@ -6,12 +6,12 @@
   "milestone": {
     "name": "v0.5 Dark mode",
     "due": "2026-11-30",
-    "percentComplete": 0
+    "percentComplete": 40
   },
   "highlights": [
-    "Contrast API planned",
-    "Palette generator planned",
-    "Tailwind export guide proposed"
+    "WCAG contrast ratio implemented",
+    "Palette text selection available",
+    "Five reference tests pass"
   ],
   "risks": [
     {
@@ -25,6 +25,12 @@
       "value": "100",
       "trend": "up",
       "sample": true
+    },
+    {
+      "label": "Open issues",
+      "value": "8",
+      "trend": "flat",
+      "sample": false
     },
     {
       "label": "Test coverage",
