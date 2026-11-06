@@ -1,0 +1,36 @@
+{
+  "project": "Lumen Palette",
+  "tagline": "Generate color palettes & check WCAG contrast ratios.",
+  "version": "0.4.0",
+  "health": "green",
+  "milestone": {
+    "name": "v0.5 Dark mode",
+    "due": "2026-11-30",
+    "percentComplete": 0
+  },
+  "highlights": [
+    "Contrast API planned",
+    "Palette generator planned",
+    "Tailwind export guide proposed"
+  ],
+  "risks": [
+    {
+      "title": "APCA experiment is not ready for use",
+      "severity": "low"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Stars goal",
+      "value": "100",
+      "trend": "up",
+      "sample": true
+    },
+    {
+      "label": "Test coverage",
+      "value": "90%",
+      "trend": "flat",
+      "sample": true
+    }
+  ]
+}
