@@ -6,3 +6,8 @@ export function createPalette(background) {
   const foreground = darkRatio >= lightRatio ? '#000000' : '#ffffff';
   return { background, foreground, contrastRatio: Math.max(darkRatio, lightRatio) };
 }
+
+export function compactPalette(background) {
+  const palette = createPalette(background);
+  return [palette.background, palette.foreground, palette.contrastRatio];
+}
