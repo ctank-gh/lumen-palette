@@ -1,0 +1,15 @@
+{
+  "name": "lumen-palette",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Fictional demo library for WCAG contrast & color palettes",
+  "exports": {
+    ".": "./src/palette.js",
+    "./contrast": "./src/contrast.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
