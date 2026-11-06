@@ -5,15 +5,23 @@ Generate color palettes & check WCAG contrast ratios in JavaScript.
 ![Status](https://img.shields.io/badge/status-demo-green)
 
 ## Why
-Compare foreground & background colors before selecting a palette. This repository is a fictional community-project demo.
+Choose foreground colors using measured contrast rather than appearance. This is a fictional community-project demo, with no package publication.
 
 ## Quick start
-The initial skeleton contains this overview & pulse.json. The completed package will provide `npm test` & dependency-free JavaScript exports.
+```sh
+npm test
+```
+```js
+import { createPalette } from "./src/palette.js";
+import { contrastRatio } from "./src/contrast.js";
+console.log(createPalette("#2563eb"));
+console.log(contrastRatio("#000000", "#ffffff")); // 21
+```
 
 | Capability | Status |
 | --- | --- |
-| WCAG contrast | Planned |
-| Palette generation | Planned |
-| Tailwind export guide | Proposed |
+| WCAG contrast ratio | Available |
+| Black/white text selection | Available |
+| Tailwind export guide | Proposed in PR |
 
-Sample metrics in pulse.json are identified explicitly.
+Accepts six-digit hex colors. Text contrast alone does not establish whole-page accessibility. See `docs/ROADMAP.md` for planned work. Invented pulse metrics are marked `sample`.
