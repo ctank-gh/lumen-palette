@@ -15,3 +15,8 @@ export function contrastRatio(first, second) {
   const b = luminance(second);
   return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
 }
+
+// Draft boundary only: no APCA algorithm or compliance claim.
+export function apcaContrast() {
+  throw new Error('APCA experiment is not implemented; use contrastRatio for WCAG ratios');
+}
